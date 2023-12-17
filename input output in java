@@ -1,0 +1,28 @@
+//taking input
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        // output
+        System.out.print("prints everything in same line");
+        System.out.println("For next line after printing this one");
+        System.out.print("Next line\n");
+        //variables
+        int a=22;
+        int b =56;
+        int sum = a+b;
+        System.out.println(sum);
+        String s= "Hello guyss";
+        System.out.println(s);
+        char d = 'd';
+        System.out.println(d);
+        //input
+        Scanner sc = new Scanner(System.in);
+        String name = sc.next(name); //takes only one word
+        System.out.print(name);
+        sc.nextLine();//takes the remianing
+        String n = sc.nextLine();//takes the whole sentence
+        System.out.print(n);
+        
+    }
+}
