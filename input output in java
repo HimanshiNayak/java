@@ -23,6 +23,5 @@ public class main{
         sc.nextLine();//takes the remianing
         String n = sc.nextLine();//takes the whole sentence
         System.out.print(n);
-        
     }
 }
