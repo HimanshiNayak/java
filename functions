@@ -1,0 +1,14 @@
+//sum of two
+import java.util.*;
+public class summ{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("First number: ");  // here will take input in nextline as println is used , if not then ip in same line , then chnages the line
+        int a =sc.nextInt();//for integer
+        System.out.println("Second number: ");
+        int b = sc.nextInt();
+        System.out.println("Sum is : ");
+        int sum = a+b;
+        System.out.print(sum);
+    }
+}    
