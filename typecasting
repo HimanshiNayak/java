@@ -7,7 +7,7 @@ public class typecast{
         System.out.println(l);
         // byte->short->int->long->float ->double
         
-        //narrowing//explicit : lossy
+        //narrowing or explicit or lossy
         double d= 2.16489;
         int c =(int) d;
         System.out.println(a);
