@@ -1,1 +1,21 @@
+//typecasting
+public class typecast{
+    public static void main(String[] args){
+        // widening // implicit
+        int a = 52694;
+        long l = a;
+        System.out.println(l);
+        // byte->short->int->long->float ->double
+        
+        //narrowing//explicit : lossy
+        double d= 2.16489;
+        int c =(int) d;
+        System.out.println(a);
+        float f = 9.08;
+        int g = (int)f;
+        System.out.println(g);
+        // double->float->long->int->short->byte
+        
+    }
+}
 
