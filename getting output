@@ -1,6 +1,5 @@
-printing ways
 
-public class hemlo{
+public class hello{
     public static void main(String[] args){
         System.out.print("not in next line.");
         System.out.print("as print is used.");
