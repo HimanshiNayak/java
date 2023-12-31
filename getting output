@@ -1,1 +1,18 @@
+printing ways
+
+public class hemlo{
+    public static void main(String[] args){
+        System.out.print("not in next line.");
+        System.out.print("as print is used.");
+        System.out.print("\n");
+        System.out.println("nextline");
+        System.out.println("as println is used");
+        //printf takes two arguments: for formatting in decimal ways
+        System.out.printf("the value of pi is: %.2f\n",3.144);
+        // System.out.printf("the value of pi is: %d",3.114);
+        System.out.printf("pi: %20.1f\n",3.14141414);//will shift it to 20 places right
+        System.out.printf("pi:%.5f",3.14); //keeps the number of zeros accordingly
+        
+    }
+}
 
