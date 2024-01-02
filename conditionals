@@ -33,4 +33,28 @@ else{
 System.out.println("Invalid");
     }
 }
-
+//switch-case
+import java.util.*;
+public class sc{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String dow,tow;
+        dow = sc.nextLine();
+        switch(dow){
+            case "Monday":
+                System.out.println("satrt studying");
+                break;
+            case "Tuesday":
+            case "wednesday":
+            case "Wednesday":
+                System.out.println("middays");
+            case "Friday":
+                System.out.println("weekends gonna come");
+            case"saturday":
+            case "sunday":
+                System.out.println("weekend");
+            default:
+                System.out.println("Invalid day.");
+        }
+    }
+}
