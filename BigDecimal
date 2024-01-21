@@ -1,1 +1,67 @@
+import java.math.BigDecimal;   // works in this package
+   
+
+public class Decimal{
+   
+    public static void main(String[] args) {
+        //declaring 
+        BigDecimal A,B;
+        //initialising
+        A=new BigDecimal("5.36698");
+        B= BigDecimal.valueOf(8.2456987);
+
+        //initializing whenthe numbers are as trinr
+
+        BigDecimal C= new BigDecimal("2.365489");
+
+        //when the number is passed as a value
+
+        BigDecimal D= BigDecimal.valueOf(2.36547);
+
+        //operations
+
+        BigDecimal E = A.add(B);
+        B = A.subtract(B);
+        C = C.multiply(A);
+        // BigDecimal Y= C.divide(D);
+        D= D.negate();        
+        BigDecimal G = BigDecimal.valueOf(2.366589);
+        G=G.pow(2);
+
+        System.out.println(E);
+        System.out.println(G);
+        System.out.println(B);
+        System.out.println(D);
+        System.out.println(E);
+        // System.out.println(Y);
+
+        String s= "123456.789546";
+        BigDecimal W= A.add(new BigDecimal(s));
+        System.out.println(W);
+        double d= 5.236589647;
+        BigDecimal y=A.multiply(BigDecimal.valueOf(d));
+
+        //to limit the value to the double range
+        double u = A.doubleValue();
+        //to string
+        String q =A.toString();
+
+        //comparison
+        if(A.compareTo(B)<0){}
+        if(A.equals(B)){}
+
+        // // setScale :get a newscale for the bigdecimal
+
+        BigDecimal S  =A.setScale(5);
+        System.out.println(S);
+        String h="5.236589741258"; //gives arithmetic rounoff exception
+         A=(new BigDecimal(h)).setScale(3);
+         System.out.println(A);
+
+         //this needs the rounding mode method to resolve the error
+         
+         
+        
+    }
+}
 
