@@ -1,1 +1,26 @@
+class Person {
+  String name;
+  int age;
+  void display(){
+    System.out.print("Name : "+name+"  , age : "+age);
+   }
+}
+class Student extends Person{
+  int rollno;
+  //if both have a func with same name then will run only the func of the child class
+  void dis(){
+    System.out.println(" roll no : "+rollno);
+   }
+}
 
+public class inheritance {
+public static void main(String[] args) {
+    Student s = new Student();
+    s.name = "Ravi";
+    s.age = 35;
+    s.rollno = 45;
+    // s.display();
+   s.display();
+    s.dis();
+    }
+}
