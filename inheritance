@@ -7,7 +7,7 @@ class Person {
 }
 class Student extends Person{
   int rollno;
-  //if both have a func with same name then will run only the func of the child class
+  //if both have a func with same name then will run only the func of the  class whose obj is amde: scope resolution
   void dis(){
     System.out.println(" roll no : "+rollno);
    }
