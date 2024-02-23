@@ -24,3 +24,5 @@ public static void main(String[] args) {
     s.dis();
     }
 }
+
+//no multiple inheritance is there in java due to ambiguity
