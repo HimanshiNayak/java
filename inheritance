@@ -28,6 +28,7 @@ public static void main(String[] args) {
 //no multiple inheritance is there in java due to ambiguity
 
 //multilvel inheritance works
+
 public class multilevel {
     public static void main(String[] args) {
 
@@ -48,16 +49,16 @@ public class multilevel {
 }
 class A{
  void display(){
-System.out.println("bye, class A");
+System.out.println("This is class A.");
 }
 }
 class B extends A{
      void show(){
-        System.out.println("hi , Class B");
+        System.out.println("This is Class B,I am the parent of C and child of A");
         }
 }
 class C extends B{
     void printmesaage(){
-        System.out.println("hello, class c");
+        System.out.println("This is class c,I am the child of A and B");
         }
 }
