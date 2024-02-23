@@ -26,3 +26,38 @@ public static void main(String[] args) {
 }
 
 //no multiple inheritance is there in java due to ambiguity
+
+//multilvel inheritance works
+public class multilevel {
+    public static void main(String[] args) {
+
+        C c = new C();
+        c.printmesaage();
+        c.show();
+        c.display();
+
+        B b = new B();
+        b.display();
+        b.show();
+// b.printmesaage :cannotbe accesssed as is the method od child class
+
+        A a = new A();
+        a.display();
+        //here the methods of b and c cannot be accessed
+    }
+}
+class A{
+ void display(){
+System.out.println("bye, class A");
+}
+}
+class B extends A{
+     void show(){
+        System.out.println("hi , Class B");
+        }
+}
+class C extends B{
+    void printmesaage(){
+        System.out.println("hello, class c");
+        }
+}
