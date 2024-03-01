@@ -64,3 +64,55 @@ int t = e.cube(n);
 e.show();
     }
 }
+
+
+
+import java.util.*;
+interface A{
+    int x =20;
+    String greet = "Hello";
+    int square(int n);
+    void display();
+}
+interface D {
+    int cube(int d);
+    void show();
+}
+class B implements A,D{
+
+    @Override
+    public int square( int m) {
+       return m*m; // wontprint anything
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Done");
+    }
+
+    @Override
+    public int cube(int d) {
+        return d*d*d;
+    }
+
+    @Override
+    public void show() {
+        System.out.println("Multiple inheritance done!");
+    }
+}
+public class interfaces {
+    public static void main(String[] args) {
+        B b = new B();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number to get square: ");
+int num = sc.nextInt();
+int c = b.square(num);
+b.display();
+Scanner scan = new Scanner(System.in);
+System.out.println("Enter a number to get square: ");
+int n = scan.nextInt();
+int d = b.cube(n);
+b.show();
+    }
+}
+
