@@ -65,7 +65,7 @@ e.show();
     }
 }
 
-
+//multiple inhheritance
 
 import java.util.*;
 interface A{
