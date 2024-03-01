@@ -1,4 +1,4 @@
-
+//single inheritance
 
 import java.util.*;
 interface A{
