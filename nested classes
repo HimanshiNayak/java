@@ -1,1 +1,32 @@
-te
+class  OuterA{
+    int a = 10;
+    int sum(int b,int c){
+        return b+c;
+    }
+    static int multiplication(int a,int d){
+        return a*d;
+    }
+    static int d = 25;
+   static class InnerA{
+        int b =100;
+        int diff(int b, int c){
+            return b-c;
+        }
+    }
+}
+
+public class nestedclass {
+    public static void main(String[] args) {
+        OuterA obj1 = new OuterA();
+       System.out.println(obj1.a); 
+       System.out.println("sum is:"+obj1.sum(100,200));
+       OuterA.InnerA obj2 = new OuterA.InnerA(); //wont work without making the inner class static
+    //   System.out.println(obj2.a);  //the inner class cannou=t access the nonstatic menmbers of the outer class
+    //   System.out.println(obj2.sum(300,400)); 
+      System.out.println(obj2.b); 
+      System.out.println(obj2.diff(400,500)); 
+      System.out.println(obj2.d); 
+      System.out.println(obj2.multiplication(4,5)); 
+
+    }
+}
