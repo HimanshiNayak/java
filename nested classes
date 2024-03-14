@@ -25,8 +25,11 @@ public class nestedclass {
     //   System.out.println(obj2.sum(300,400)); 
       System.out.println(obj2.b); 
       System.out.println(obj2.diff(400,500)); 
-      System.out.println(obj2.d); 
-      System.out.println(obj2.multiplication(4,5)); 
+     //   System.out.println(obj2.d);  these wont work by making obj as they are static , can be accessed by the class only
+    //   System.out.println(obj2.multiplication(4,5)); 
+    System.out.println(OuterA.d);
+    System.out.println("Multiplication of the  two numbers"+OuterA.multiplication(4, 10));
 
+    }
     }
 }
