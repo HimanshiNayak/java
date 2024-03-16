@@ -1,1 +1,25 @@
-
+class OuterA{
+    int x =56;
+    int sum(int a,int b){
+        return a+b;
+    }
+    class InnerA{
+        int x =90;
+        int mul(int a , int b){
+            return a*b;
+        }
+    }
+}
+public class nestednonstatic {
+    public static void main(String[] args) {
+        OuterA obj1 = new OuterA();
+        System.out.println("Inside the outer class:-");
+        System.out.println("The value of outer classes var is : "+obj1.x);
+        System.out.println("The addition of 30 and 300 is: "+obj1.sum(30,300));
+        //to access the inner class without making it static we make it as a reference of outer class and make the costructor of the inner class by usingthe obj of the outerclass 
+        OuterA.InnerA obj2 = obj1.new InnerA();
+        System.out.println("Inside the inner class:-");
+        System.out.println("The value of inner classes var is : "+obj2.x);
+        System.out.println("The multiplication of 30 and 300 is: "+obj2.mul(30,300));
+    }
+}
