@@ -15,7 +15,8 @@ public class main{
         String s= "Hello guyss";
         System.out.println(s);
         char d = 'd';
-        System.out.println(d);
+        System.out.println(d) ;
+
         //input
         Scanner sc = new Scanner(System.in);
         String name = sc.next(name); //takes only one word
