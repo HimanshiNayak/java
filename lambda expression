@@ -1,1 +1,16 @@
-
+interface anonymous{
+    void greet();
+}
+public class lambdaexp{
+    public static void main(String[] args){
+anonymous obj1 = ()->{
+    System.out.println("hello");
+};
+obj1.greet();
+//here 2 bjs of the same interface but different class , as they are anonymous so they can be given different names by the compiler
+anonymous obj2 =()->{
+    System.out.println("hiiiii ");
+};
+obj2.greet();
+    }
+}
