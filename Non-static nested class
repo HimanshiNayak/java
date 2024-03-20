@@ -23,3 +23,4 @@ public class nestednonstatic {
         System.out.println("The multiplication of 30 and 300 is: "+obj2.mul(30,300));
     }
 }
+
