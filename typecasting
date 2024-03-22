@@ -15,7 +15,8 @@ public class typecast{
         int g = (int)f;
         System.out.println(g);
         // double->float->long->int->short->byte
-        
+
+
     }
 }
 
