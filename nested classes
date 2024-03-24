@@ -30,6 +30,7 @@ public class nestedclass {
     System.out.println(OuterA.d);
     System.out.println("Multiplication of the  two numbers"+OuterA.multiplication(4, 10));
 
+
     }
     }
 }
