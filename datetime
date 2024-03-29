@@ -20,3 +20,26 @@ public class datetime{
         System.out.println(myobj);
     }
 }
+// classes in the java.time package
+
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+public class datetimeexam {
+    public static void main(String[] args) {
+        //to get todays date
+        LocalDate ob1 = LocalDate.now();
+        System.out.println(ob1);
+        //to get local time
+        LocalTime obj2 = LocalTime.now();
+        System.out.println(obj2);
+        //display both current date and time
+        LocalDateTime obj3 = LocalDateTime.now();
+        System.out.println(obj3);
+        //datetimeformatter
+        LocalDateTime obj4 = LocalDateTime.now();
+        System.out.println("Before formatting: "+obj4);
+        DateTimeFormatter formdate = DateTimeFormatter.ofPattern("dd-mm-yyyy HH:mm:ss");
+        String formatteddate = obj4.format(formdate);
+        System.out.println("After formatting: "+formatteddate);
+    }
+}
