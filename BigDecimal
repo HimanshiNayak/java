@@ -1,6 +1,4 @@
 import java.math.BigDecimal;   // works in this package
-   
-
 public class Decimal{
    
     public static void main(String[] args) { 
