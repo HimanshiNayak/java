@@ -9,7 +9,6 @@ public class Decimal{
         B= BigDecimal.valueOf(8.2456987);
 
         //initializing whenthe numbers are as trinr
-
         BigDecimal C= new BigDecimal("2.365489");
 
         //when the number is passed as a value
