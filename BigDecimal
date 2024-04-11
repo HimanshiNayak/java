@@ -15,7 +15,6 @@ public class Decimal{
         //when the number is passed as a value
 
         BigDecimal D= BigDecimal.valueOf(2.36547);
-
         //operations
 
         BigDecimal E = A.add(B);
