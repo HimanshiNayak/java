@@ -46,7 +46,6 @@ public class Decimal{
         if(A.equals(B)){}
 
         // // setScale :get a newscale for the bigdecimal
-
         BigDecimal S  =A.setScale(5);
         System.out.println(S);
         String h="5.236589741258"; //gives arithmetic rounoff exception
